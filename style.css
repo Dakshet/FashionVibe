@@ -1,0 +1,713 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero-container {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(226, 235, 64, 0.1), rgba(135, 40, 231, 0.3)), url("image/clothes-1839935_1920.jpg");
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+    padding: 0px 15vw;
+    order: 2;
+}
+
+.hero-container-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    background-color: #2B2A28;
+    color: rgb(218, 215, 215);
+    height: 60px;
+    clip-path: polygon(0% 0%, 100% 0%, 96% 100%, 4% 100%);
+}
+
+.hero-container-header ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 2vw;
+    cursor: pointer;
+}
+
+.hero-container-header ul li a {
+    color: white;
+    transition: color 0.5s;
+}
+
+.hero-container-header ul li a:hover {
+    color: #F26522;
+}
+
+.hero-container-logoName {
+    margin-top: 16vh;
+    margin-bottom: 9vh;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    /* background-color: red; */
+}
+
+.hero-container-logoName h1 {
+    font-size: 5vw;
+    font-weight: 700;
+    font-family: "Baskervville SC", serif;
+    /* letter-spacing: ; */
+}
+
+
+/* -------------------------------- Hero Container SearchBox---- */
+.hero-container-searchBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: black;
+    /* margin-bottom: 10px; */
+}
+
+.hero-container-searchBox .iconBars {
+    font-size: 1.6vw;
+    cursor: pointer;
+    color: white;
+}
+
+.hero-container-searchBox .allCategory {
+    background-color: white;
+    color: gray;
+    padding: 5px 1vw;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 10vw;
+    font-weight: 600;
+}
+
+.hero-container-searchBox .searchBar {
+    background-color: white;
+    color: grey;
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+.hero-container-searchBox .searchBar input {
+    flex: 1;
+    padding: 8px 4px;
+    border: 0;
+    outline: 0;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+.hero-container-searchBox .searchBar input::placeholder {
+    color: rgb(45, 44, 44);
+    font-size: 13px;
+}
+
+.hero-container-searchBox .searchBar .searchIcon {
+    background-color: #F26522;
+    color: white;
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero-container-searchBox .languageBox {
+    border: 0;
+    outline: 0;
+    background-color: white;
+    color: grey;
+    padding: 8px 15px;
+}
+
+.hero-container-searchBox .cardBox {
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 500;
+
+}
+
+.hero-container-searchBox .cardBox i {
+    margin-right: 5px;
+
+}
+
+
+/* End Here Hero Container SearchBox */
+
+
+/* Second Heading */
+/* .hero-container-second-outer {
+    width: 100%;
+    display: block;
+    background-color: blue;
+    text-align: center;
+} */
+
+
+
+.hero-container-second-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    height: 180px;
+    width: 78vw;
+    padding: 0px;
+    margin: 100px -5vw 0;
+}
+
+.hero-container-second-heading ul {
+    /* background-color: lightblue; */
+    max-width: 720px;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.hero-container-second-heading ul li {
+    list-style: none;
+    display: inline-block;
+    /* background-color: rebeccapurple; */
+    margin: 10px 10px;
+    padding-bottom: 10px;
+    min-width: 700px;
+}
+
+
+.hero-container-second-heading i {
+    display: block;
+    font-size: 20px;
+    background-color: rgb(52, 52, 52);
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+}
+
+.hero-container-second-heading i:hover {
+    color: #F26522;
+}
+
+.hero-container-second-heading .header {
+    color: white;
+    text-transform: uppercase;
+}
+
+.hero-container-second-heading .header h1 {
+    margin: 10px 0px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    font-size: 35px;
+}
+
+.hero-container-button {
+    padding: 10px 40px;
+    text-transform: uppercase;
+    background-color: #2B2A28;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+/* -----End Second heading */
+
+.item-container {
+    order: 100;
+}
+
+.item-container1 {
+    box-shadow: 0px -70px 50px 20px #ffffff;
+    width: 100%;
+    text-align: center;
+    /* background-color: red; */
+    /* height: 218px; */
+    padding-top: 50px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.item-container1 .heading {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.item-container1 .items {
+    display: flex;
+    justify-content: center;
+}
+
+.item-container1 .items .box {
+    width: 350px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.09);
+    margin: 10px 20px;
+    padding: 20px 10px 40px;
+    /* background-color: black; */
+}
+
+.item-container1 .items .box h6 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.item-container1 .items .box p {
+    color: orange;
+}
+
+.item-container1 .items .box p span {
+    color: grey;
+}
+
+.item-container1 .items .box img {
+    width: 230px;
+    height: 300px;
+    margin-top: 30px;
+}
+
+.item-container1 .items .box div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    padding: 60px 20px 0px;
+}
+
+.item-container1 .items .box div a:first-child {
+    color: #F26522;
+    font-weight: 700;
+}
+
+.item-container1 .items .box div a:last-child {
+    color: black;
+}
+
+
+.item-container1:nth-child(2) .items .box img {
+    width: 230px;
+    height: 240px;
+    margin-top: 30px;
+}
+
+
+.circle {
+    /* content: "";
+    position: absolute;
+    top: 3100px;
+    left: 50%; */
+    margin-top: 130px;
+    margin-left: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 15px solid #414744;
+    border-top: 15px solid #F26522;
+    border-bottom: 15px solid #F26522;
+    animation: animate 5s infinite linear;
+}
+
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg)
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg)
+    }
+}
+
+
+footer {
+    /* background-color: rebeccapurple; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: #2B2A28;
+    color: rgb(218, 215, 215);
+}
+
+.container-footer {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0px 40px;
+}
+
+.footerLogoName h1 {
+    font-size: 50px;
+}
+
+.footerInputEmail {
+    /* background-color: red; */
+    color: white;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+    width: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.footerInputEmail input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    padding: 10px 0px;
+    font-size: 18px;
+}
+
+::placeholder {
+    font-size: 18px;
+    color: white
+}
+
+.footerInputEmail a {
+    color: #F26522;
+    transition: color 0.5s;
+}
+
+.footerInputEmail a:hover {
+    color: white;
+}
+
+.footerItems {
+    margin-top: 20px;
+}
+
+.footerItems li {
+    display: inline-block;
+    list-style: none;
+}
+
+.footerItems li a {
+    margin: 0px 10px;
+    color: white;
+    transition: color 0.5s;
+}
+
+.footerItems li a:hover {
+    color: #F26522;
+}
+
+.footerHelpLineNum {
+    margin-top: 10px;
+    color: white;
+}
+
+.footerHelpLineNum p {
+    font-weight: 600;
+}
+
+.footerHelpLineNum p a {
+    margin-left: 10px;
+    color: white;
+    transition: color 0.5s;
+}
+
+.footerHelpLineNum p a:hover {
+    color: #F26522;
+}
+
+.container-footer p {
+    font-size: 16px;
+    margin-top: 40px;
+    color: white;
+    font-weight: 600;
+}
+
+
+.toggleBox {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    overflow: hidden;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    transition: width 0.5s;
+}
+
+.toggleBox.openToggleBox {
+    width: 250px;
+}
+
+.toggleBox ul {
+    padding: 100px 0px;
+}
+
+.toggleBox ul li {
+    list-style: none;
+    margin: 30px 0px;
+    cursor: pointer;
+}
+
+.toggleBox ul li a {
+    color: white;
+    transition: color 0.5s;
+}
+
+.toggleBox ul li a:hover {
+    color: #F26522;
+}
+
+.toggleBox ul #cancelToggleBox {
+    float: right;
+    cursor: pointer;
+    margin-top: -50px;
+    margin-right: 20px;
+    height: 30px;
+    width: 30px;
+    padding-top: 7px;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+#cancelToggleBox:hover {
+    background-color: #F26522;
+    color: white;
+}
+
+
+
+
+
+/* ------------------- Media Queries */
+
+@media (min-width:911px) and (max-width:1100px) {
+    .hero-container-header {
+        width: 80vw;
+        margin: 0px -5vw;
+    }
+
+    .hero-container-second-heading ul {
+        max-width: 68vw;
+    }
+
+    .hero-container-second-heading ul li {
+        margin: 10px 10px;
+        padding-bottom: 10px;
+        min-width: 66vw;
+    }
+}
+
+
+@media (min-width:600px) and (max-width:910px) {
+    .hero-container {
+        width: 119vw;
+    }
+
+    .hero-container-header {
+        width: 110vw;
+        margin: 0px -11vw;
+    }
+
+    .hero-container-header ul li a {
+        font-size: 15px;
+    }
+
+    .hero-container-logoName h1 {
+        font-size: 60px
+    }
+
+    .hero-container-searchBox {
+        width: 98vw;
+        margin: 0 -4vw;
+    }
+
+    .hero-container-searchBox .iconBars {
+        font-size: 25px;
+    }
+
+    .hero-container-searchBox .allCategory {
+        width: 13vw;
+    }
+
+    .hero-container-searchBox .searchBar {
+        width: 250px;
+    }
+
+    .hero-container-second-heading {
+        width: 103vw;
+    }
+
+    .hero-container-second-heading ul {
+        max-width: 550px;
+    }
+
+    .hero-container-second-heading ul li {
+        min-width: 530px;
+        min-width: 530px;
+    }
+
+    .hero-container-second-heading .header h1 {
+        font-size: 30px;
+    }
+
+    .item-container {
+        order: 100;
+        display: block;
+        width: 119vw;
+    }
+
+    .item-container1 .items .box {
+        width: 300px;
+        margin: 0px 10px;
+        padding: 20px 10px 40px;
+    }
+
+    .item-container1 .items .box img {
+        width: 150px;
+        height: 200px;
+        margin-top: 30px;
+    }
+
+
+    .item-container1:nth-child(2) .items .box img {
+        width: 150px;
+        height: 180px;
+        margin-top: 30px;
+    }
+
+    .circle {
+        margin-left: 60%;
+    }
+
+
+    footer {
+        width: 119vw;
+    }
+
+}
+
+
+@media only screen and (max-width:600px) {
+
+    .hero-container {
+        min-height: 50px;
+        width: 100%;
+    }
+
+    .hero-container-header {
+        height: 0px;
+    }
+
+    .hero-container-header ul li {
+        display: none;
+    }
+
+    .hero-container-logoName {
+        margin-top: 14vh;
+    }
+
+    .hero-container-logoName h1 {
+        font-size: 10vw;
+    }
+
+    .hero-container-searchBox .cardBox {
+        content: "";
+        position: absolute;
+        top: 7px;
+        right: 2%;
+    }
+
+    .cardBox.cardBoxCard {
+        margin-right: 70px;
+        font-size: 14px;
+    }
+
+    .cardBox.cardBoxUser {
+        font-size: 14px;
+    }
+
+    .hero-container-searchBox {
+        margin: 0 auto;
+        /* background-color: red; */
+        width: 270px;
+        height: 100px;
+    }
+
+    .hero-container-searchBox .iconBars {
+        font-size: 20px;
+    }
+
+    .hero-container-searchBox .allCategory {
+        width: 90px;
+        margin: 0px 20px;
+    }
+
+    .hero-container-searchBox .searchBar {
+        width: 200px;
+        /* background-color: rebeccapurple;
+        height: 200px; */
+        overflow: hidden;
+    }
+
+    .hero-container-searchBox .searchBar input {
+        /* flex: 1; */
+        padding: 8px 1px;
+        width: 5vw;
+        /* background-color: red; */
+    }
+
+    .item-container1 .items {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .item-container1 .items .box {
+        width: 100%;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.09);
+        margin: 10px 20px;
+        padding: 20px 10px 40px;
+        /* background-color: black; */
+    }
+
+    footer {
+        padding: 0px 10px;
+    }
+
+    .footerInputEmail {
+        width: 90vw;
+    }
+}
