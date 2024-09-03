@@ -161,85 +161,94 @@ a {
 
 /* End Here Hero Container SearchBox */
 
-
-/* Second Heading */
-/* .hero-container-second-outer {
-    width: 100%;
-    display: block;
-    background-color: blue;
-    text-align: center;
-} */
+/* =========----------------- Start Testimonials */
 
 
-
-.hero-container-second-heading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background-color: red; */
-    height: 180px;
-    width: 78vw;
-    padding: 0px;
-    margin: 100px -5vw 0;
+.testimonials {
+    margin: 70px 4vw;
+    padding: 0 80px;
+    position: relative;
 }
 
-.hero-container-second-heading ul {
-    /* background-color: lightblue; */
-    max-width: 720px;
-    display: flex;
-    overflow-x: hidden;
-}
-
-.hero-container-second-heading ul li {
-    list-style: none;
-    display: inline-block;
-    /* background-color: rebeccapurple; */
-    margin: 10px 10px;
-    padding-bottom: 10px;
-    min-width: 700px;
-}
-
-
-.hero-container-second-heading i {
-    display: block;
-    font-size: 20px;
-    background-color: rgb(52, 52, 52);
-    height: 40px;
+#backBtn,
+#nextBtn {
+    content: "";
+    position: absolute;
+    top: 45%;
+    right: 0px;
+    transform: translateX(-50%);
+    background-color: #F26522;
+    color: white;
+    padding: 12px;
     width: 40px;
-    line-height: 40px;
     border-radius: 50%;
+    box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.8);
     cursor: pointer;
-    color: white;
+    z-index: 10;
 }
 
-.hero-container-second-heading i:hover {
+#backBtn {
+    transform: translateX(50%);
+    float: left;
+    left: 0;
+}
+
+#backBtn:hover,
+#nextBtn:hover {
     color: #F26522;
+    background-color: white;
 }
 
-.hero-container-second-heading .header {
+
+.slider {
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    min-width: 300%;
+    overflow-x: hidden;
+    transition: 0.5s;
+    /* transform: translateX(-33.3%); */
+}
+
+.slider ul li {
+    width: 100%;
+    padding: 20px;
+    list-style: none;
+    margin: 0px 0px;
+    /* background-color: rebeccapurple; */
+}
+
+.slide {
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding: 20px;
+    text-transform: uppercase;
+    /* background-color: red; */
     color: white;
-    text-transform: uppercase;
 }
 
-.hero-container-second-heading .header h1 {
-    margin: 10px 0px;
-    font-weight: 800;
-    letter-spacing: 3px;
-    word-spacing: 5px;
-    font-size: 35px;
-}
-
-.hero-container-button {
-    padding: 10px 40px;
-    text-transform: uppercase;
+.slide a {
+    padding: 7px 16px;
     background-color: #2B2A28;
     color: white;
-    cursor: pointer;
+    border-radius: 30px;
+    font-size: 15px;
+    text-transform: none;
+    margin-top: 20px;
     display: inline-block;
-    border-radius: 20px;
+    font-weight: 700;
 }
 
-/* -----End Second heading */
+.slide a:hover {
+    font-weight: 800;
+    color: #2B2A28;
+    background-color: white;
+}
+
+
+
 
 .item-container {
     order: 100;
@@ -519,15 +528,6 @@ footer {
         margin: 0px -5vw;
     }
 
-    .hero-container-second-heading ul {
-        max-width: 68vw;
-    }
-
-    .hero-container-second-heading ul li {
-        margin: 10px 10px;
-        padding-bottom: 10px;
-        min-width: 66vw;
-    }
 }
 
 
@@ -564,23 +564,6 @@ footer {
 
     .hero-container-searchBox .searchBar {
         width: 250px;
-    }
-
-    .hero-container-second-heading {
-        width: 103vw;
-    }
-
-    .hero-container-second-heading ul {
-        max-width: 550px;
-    }
-
-    .hero-container-second-heading ul li {
-        min-width: 530px;
-        min-width: 530px;
-    }
-
-    .hero-container-second-heading .header h1 {
-        font-size: 30px;
     }
 
     .item-container {
@@ -625,6 +608,10 @@ footer {
     .hero-container {
         min-height: 50px;
         width: 100%;
+        background: linear-gradient(rgba(226, 235, 64, 0.1), rgba(135, 40, 231, 0.4), rgba(135, 40, 231, 0.1)), url("image/clothes-1839935_1920.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .hero-container-header {
@@ -689,6 +676,10 @@ footer {
         /* background-color: red; */
     }
 
+    /* .hero-container-second-heading {
+        margin: 20px 0 0;
+    } */
+
     .item-container1 .items {
         display: flex;
         justify-content: center;
@@ -701,6 +692,23 @@ footer {
         margin: 10px 20px;
         padding: 20px 10px 40px;
         /* background-color: black; */
+    }
+
+
+    .testimonials {
+        margin: 70px 0;
+        padding: 0 50px;
+        margin-left: -40px;
+        margin-right: -40px;
+        position: relative;
+    }
+
+    .slide h1 {
+        font-size: 15px;
+    }
+
+    .slide a {
+        font-size: 14px;
     }
 
     footer {

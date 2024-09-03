@@ -59,7 +59,7 @@
                     <li><a href="#" onclick="onClickOpenMenuBar()">Jewellery</a></li>
                 </ul>
             </div>
-
+            <!-- 
             <div class="hero-container-second-heading">
                 <i class="fa-solid fa-angle-left" id="backBtn"></i>
                 <ul id="listUl">
@@ -92,6 +92,37 @@
                     </li>
                 </ul>
                 <i class="fa-solid fa-angle-right" id="nextBtn"></i>
+            </div> -->
+
+            <div class="testimonials">
+                <i class="fa-solid fa-angle-left" id="backBtn" onclick="sliderBackward()"></i>
+                <i class="fa-solid fa-angle-right" id="nextBtn" onclick="sliderForward()"></i>
+
+                <div class="slider">
+                    <ul id="slider">
+                        <li>
+                            <div class="slide">
+                                <h1>Get Start</h1>
+                                <h1>Your favourite shoping1</h1>
+                                <a href="#">Buy Now</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="slide">
+                                <h1>Get Start</h1>
+                                <h1>Your favourite shoping2</h1>
+                                <a href="#">Buy Now</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="slide">
+                                <h1>Get Start</h1>
+                                <h1>Your favourite shoping3</h1>
+                                <a href="#">Buy Now</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
 
@@ -227,38 +258,27 @@
 
     <script>
 
-        let listUl = document.getElementById("listUl");
-        let nextBtn = document.getElementById("nextBtn")
-        let backBtn = document.getElementById("backBtn")
+        let slider = document.getElementById("slider");
+        let nextBtn = document.getElementById("nextBtn");
+        let backBtn = document.getElementById("backBtn");
 
-        const isLargeScreen = window.matchMedia("(min-width: 1100px)");
-        const isMediumScreen = window.matchMedia("(min-width: 800px) and (max-width:1099px)");
-        const isSmallScreen = window.matchMedia("(min-width: 600px) and (max-width:910px)");
+        let tx = 0;
 
-        function getScrollAmout() {
-            if (isLargeScreen.matches) {
-                return 720;
+        function sliderForward() {
+            if (tx > -66.6) {
+                tx -= 33.3;
+
             }
-            else if (isMediumScreen.matches) {
-                return 700;
-            }
-            else if (isSmallScreen.matches) {
-                return 600;
-            }
+            slider.style.transform = `translateX(${tx}%)`;
         }
 
+        function sliderBackward() {
+            if (tx < 0) {
+                tx += 33.3;
 
-        nextBtn.addEventListener("click", (e) => {
-            listUl.style.scrollBehavior = "smooth"
-            listUl.scrollLeft += getScrollAmout();
-            // listUl.style.transform = translateX(-104);
-        })
-
-        backBtn.addEventListener("click", (e) => {
-            listUl.style.scrollBehavior = "smooth"
-            listUl.scrollLeft -= getScrollAmout();
-        })
-
+            }
+            slider.style.transform = `translateX(${tx}%)`;
+        }
 
 
         let toggleBox = document.getElementById("toggleBoxs")
