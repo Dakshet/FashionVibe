@@ -606,7 +606,7 @@ footer {
 @media only screen and (max-width:600px) {
 
     .hero-container {
-        min-height: 50px;
+        min-height: 500px;
         width: 100%;
         background: linear-gradient(rgba(226, 235, 64, 0.1), rgba(135, 40, 231, 0.4), rgba(135, 40, 231, 0.1)), url("image/clothes-1839935_1920.jpg");
         background-position: center;
@@ -623,7 +623,8 @@ footer {
     }
 
     .hero-container-logoName {
-        margin-top: 14vh;
+        margin-top: 7vh;
+        margin-bottom: 4vh;
     }
 
     .hero-container-logoName h1 {
@@ -694,13 +695,33 @@ footer {
         /* background-color: black; */
     }
 
+    .item-container1 .heading {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
 
     .testimonials {
-        margin: 70px 0;
+        margin: 0px 0;
         padding: 0 50px;
-        margin-left: -40px;
-        margin-right: -40px;
+        margin-left: -50px;
+        margin-right: -50px;
         position: relative;
+    }
+
+    #nextBtn:hover,
+    #backBtn:hover {
+        background-color: #F26522;
+        color: white;
+    }
+
+    .slider {
+        margin: 0px 10px;
+    }
+
+    .slide {
+        padding: 10px 0px;
     }
 
     .slide h1 {
@@ -717,5 +738,34 @@ footer {
 
     .footerInputEmail {
         width: 90vw;
+    }
+
+    .footerLogoName h1 {
+        font-size: 30px;
+    }
+
+    .footerInputEmail input {
+        font-size: 16px;
+    }
+
+    .footerInputEmail input::placeholder {
+        font-size: 15px;
+    }
+
+    .footerInputEmail a {
+        font-size: 15px;
+    }
+
+    .footerItems li a {
+        font-size: 14px;
+    }
+
+    .footerHelpLineNum p {
+        font-size: 14px;
+    }
+
+    .footerCopyright p {
+        font-size: 13px;
+        margin-bottom: -35px;
     }
 }
